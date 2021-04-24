@@ -1,0 +1,19 @@
+<div class="container">
+    <h2 class="text-center mt-5">More informations on <%= @restaurant.name %></h2>
+    <div class="cards-reviews">
+        <% @reviews.each do |review| %> 
+            <div class="card mt-5" style="width: 1000px;">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h5 class="card-title"><%= review.content %></h5>
+                        <p class="card-text">
+                            <% review.rating.times do %>
+                                <i class="fas fa-star"></i> 
+                            <% end %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>

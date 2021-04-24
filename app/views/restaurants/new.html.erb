@@ -1,0 +1,22 @@
+<div class="container">
+    <h2 class="text-center mt-5">Create a new restaurant</h2>
+    <%= form_for (@restaurant) do |f| %>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Name</span>
+            <%= f.text_field :name, class: "form-control" %>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Address</span>
+            <%= f.text_field :address, class: "form-control" %>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Phone number</span>
+            <%= f.text_field :phone_number, class: "form-control" %>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Category</span>
+            <%= f.text_field :category, class: "form-control" %>
+        </div>
+        <%= f.submit %>
+    <% end %>
+</div>

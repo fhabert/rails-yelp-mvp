@@ -1,0 +1,14 @@
+<div class="container">
+    <h2 class="text-center mt-5">Create a new restaurant</h2>
+    <%= form_for ([@restaurant, @review]) do |f| %>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Content</span>
+            <%= f.text_field :content, class: "form-control" %>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Rating</span>
+            <%= f.text_field :rating, class: "form-control" %>
+        </div>
+        <%= f.submit %>
+    <% end %>
+</div>
